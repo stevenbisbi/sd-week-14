@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Consejo del Día</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- AREA DE SOLO LECTURA -->
+    <div id="horoscope-container"></div>
+    <div class="container">
+        <!-- BOTÓN PARA OBTENER CONSEJO -->
+     <form id="horoscopeForm">
+            <div class="form-group">
+                <label for="birthDate">Fecha de Nacimiento (DD-MM-AAAA):</label>
+                <input type="text" id="birthDate" placeholder="Ej: 15-05-1990">
+                <small class="error-message" id="dateError"></small>
+            </div>
+            <button id="get-horoscope">Consultar</button>
+        </form>
+
+    <!-- CONTROLADOR PRINCIPAL (ES6 MODULE) -->
+    </div>
+    
+    <script type="module" src="controller.js" defer></script>
+    <script type="module" src="model.js" defer></script>
+    <script type="module" src="view.js" defer></script>
+  </body>
+</html>
