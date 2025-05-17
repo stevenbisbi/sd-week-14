@@ -57,7 +57,7 @@ async function showAdvice() {
   setTimeout(() => {
     clearView();
     enableButton();
-  }, 10000);
+  }, 15000);
 }
 
 document.getElementById("horoscopeForm").addEventListener("submit", (e) => {
